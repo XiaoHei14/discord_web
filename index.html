@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image/image.png">
+    <link rel="icon" href="./assets/image/image.png">
+    <title>防炸群機器人｜FUNZA</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="scene">
+    <div id="col">
+        <div id="title">
+            <img src="./assets/image/image.png" >
+            <h1 class="text-4xl">防炸群機器人｜FUNZA</h1>
+        </div>
+        <div id="join">
+            <a id="link" class="bg-color-500" href="https://github.com/XiaoHei14">
+                <span>
+                    加入您的Discord Server  
+                </span>
+            </a>
+        </div>
+        <div id="about">
+            <span>防炸群機器人｜FUNZA
+            <br>是由xiaoheidev開發
+            </span>
+        </div>
+    </div>
+    <footer>© 防炸群機器人｜FUNZA <script>document.write(new Date().getFullYear())</script></footer>
+</body>
+<script type="text/javascript">
+function star(){
+    let count = 500;
+    let scene = document.querySelector('body');
+    let i = 0;
+    while(i<count){
+        let star = document.createElement("i");
+        let x = Math.floor(Math.random()*window.innerWidth);
+        let y = Math.floor(Math.random()*window.innerHeight);
+        let duration = Math.random()*10;
+        let size = Math.random()*2;
+
+        star.style.left = x+'px';
+        star.style.top = y+'px';
+        star.style.width = 1+size+'px';
+        star.style.height = 1+size+'px';
+
+        star.style.animationDuration = 5+duration+'s';
+        star.style.animationDelay = duration+'s';
+
+        scene.appendChild(star);
+        i++
+    }
+}
+star();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</html>
